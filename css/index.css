@@ -1,15 +1,112 @@
-@font-face
-{
-	font-family: HelveticaNeue;
-	src: url(../fonts/HelveticaNeue.ttf);
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
 }
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.text-muted {
+	color:rgba(255,255,255,0.5);
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+	color:white;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+  }
+}
+
 
 body {
   	padding-top: 50px;
   	padding-bottom: 20px;
-	font-family: HelveticaNeue;
-   font-weight: 300;
 	font-size:20px;
+}
+
+#updown {
+	position:fixed;
+	right:10px;
+	top:50%;
+font-size: 40px;
+color: rgba(0,0,0,0.3);
+	cursor:pointer;
+}
+
+#updown .glyphicon:hover {
+	color:rgba(0,0,0,0.7);
 }
 
 #navbar {
@@ -417,4 +514,64 @@ and (max-device-width : 568px) { /* STYLES GO HERE */
 	height:30px;
   }
 
+}
+
+
+/********** PARAGON ***********/
+body#paragon {
+	background-color:#edf1f2;
+	padding-top:70px;
+}
+
+body#paragon img {
+}
+
+#graph1 {
+}
+
+#paragonlogo {
+	height: 100%;
+	width:auto;
+}
+
+#navbar-paragon {
+	background-color:#333b47;
+}
+
+#navbar-paragon .nav>li>a {
+position: relative;
+display: block;
+padding: 15px 20px;
+}
+
+#navbar-paragon .nav > li > a:hover,
+#navbar-paragon .nav > li > a:focus {
+  text-decoration: none;
+  color:#F56B00;
+  background-color: #333b47;
+}
+
+.sidenav {
+	position: absolute;
+right: 0;
+	width:100px;
+}
+
+body#paragon .row {
+	padding: 30px 0;
+}
+
+#search {
+	margin-left: -30px;
+}
+
+#notification-div {
+	display:none;
+	height:200px;
+	background-color:white;
+	cursor:pointer;
+}
+
+.icon img {
+	width:30px;
 }

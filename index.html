@@ -16,7 +16,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -45,7 +44,11 @@
   </head>
 
   <body>
-
+	<div id="updown">
+		<span id="uparrow" class="glyphicon glyphicon-upload"></span>
+		<br>
+		<span id="downarrow" class="glyphicon glyphicon-download"></span>
+	</div>
 	<div class="navbar navbar-blue navbar-fixed-top" role="navigation">
       <div id="nav-container" class="container">
         <div class="navbar-header">
@@ -55,7 +58,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#main"><img src="images/jonarlogo2.png"/></a>
+          <a class="navbar-brand" href="#main"><img height=50" src="images/jonarlogo2.png"/></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -77,52 +80,52 @@
 		</div>
     </section>
 	<section id="marketing">
-	<div class="container marketing">
-		<div class="row">
-			<div class="col-lg-4">
-		  		<img class="img-square" alt="140x140" src="images/demo.png" style="width: 140px; height: 140px;">
-		  		<h2>Request a Demo!</h2>
-				<p>Let us show you more by requesting a Trial</p>
-			</div><!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-		  		<img class="img-square" alt="140x140" src="images/review.png" style="width: 140px; height: 140px;">
-		  		<h2>Jonar Ranking</h2>
-		  		<p>See how Jonar ranks in an independent review of ERP Software</p>
-			</div><!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-		  		<img class="img-square"  alt="140x140" src="images/youtube.png" style="width: 140px; height: 140px;">
-				<h2>ERP Video</h2>
-				<p>See the YouTube featured video by Jonar</p>
-			</div><!-- /.col-lg-4 -->
-	  	</div>
-	</div> <!-- /container -->
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+          			<h2 class="featurette-heading">Notice something different?<span class="text-muted">We've changed our look</span></h2>
+          			<p class="lead">find out why</p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+			</div>
+		</div>
 	</section>
 	<section id="paragon">
-		<!--img id="erpimg" src="images/erp.png"/>
-		<div id="erpbubbles">
-			<div id="bubble1" class="gps_ring fast"><span>Manufacturing Resource Planning</span></div>
-			<div id="bubble2" class="gps_ring"><span>Financial Management</span></div>
-			<div id="bubble3" class="gps_ring slow"><span>Customer Relationship Management</span></div>
-			<div id="bubble4" class="gps_ring fast"><span>Human Resource Management</span></div>
-			<div id="bubble5" class="gps_ring"><span>Supply Chain Management</span></div>
-			<div id="bubble6" class="gps_ring slow"><span>ERP</span></div>
-			<div id="line1" class="line"></div>
-			<div id="line2" class="line"></div>
-			<div id="line3" class="line"></div>
-			<div id="line4" class="line"></div>
-			<div id="line5" class="line"></div>
-		</div-->
-    	<h2 class="center">Paragon STUFF GOES HERE</h2>
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+          			<h2 class="featurette-heading">Paragon<span class="text-muted">Some subtitle about Paragon</span></h2>
+          			<p class="lead">find out more</p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+      		</div>
+		</div>
 	</section>
 	<section id="news">
-    <div class="container">
-    	<h2 class="center">NEWS STUFF GOES HERE</h2>
-	</div> <!-- /container -->
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+          			<h2 class="featurette-heading">BI<span class="text-muted">Some subtitle about BI</span></h2>
+          			<p class="lead">find out more</p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+      		</div>
+		</div>
 	</section>
 	<section id="partnerships">
-    <div class="container">
-    	<h2 class="center">partnerships STUFF GOES HERE</h2>
-	</div> <!-- /container -->
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+          			<h2 class="featurette-heading">What is ERP?<span class="text-muted">Some subtitle about ERP</span></h2>
+          			<p class="lead">find out more</p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+      		</div>
+		</div>
 	</section>
 	<section id="whoweare">
     <div class="container">
@@ -148,12 +151,41 @@
 			</div>
 		</div>
 	</section>
+    <script src="js/jquery.js"></script>
+	<script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+		var sections = ["main","marketing","paragon","news","partnerships","whoweare","contact"];
+
+		function getCurrentSection(ypos) {
+			if(ypos < 500) return 0;
+			else if( ypos < 1300 ) return 1;
+			else if( ypos < 2100 ) return 2;
+			else if( ypos < 2900 ) return 3;
+			else if( ypos < 3700 ) return 4;
+			else if( ypos < 4500 ) return 5;
+			else if( ypos < 5300 ) return 6;
+		}
+		
+		$("#updown").click( function(e) {
+			var elm = e.target;
+			var ypos = $(window).scrollTop();
+			var index = getCurrentSection(ypos);
+			var section = "";
+			if(elm.id == "uparrow") {
+				if(index == 0 ) section = sections[index];
+				else section = sections[index-1];
+			} else if(elm.id == "downarrow") {
+				if(index == 6) section = sections[index];
+				else section = sections[index+1];
+			}
+			if(section != ""){
+	        	$('html,body').animate({
+	          		scrollTop: $("#"+section).offset().top
+	        	}, 1000);
+	        	return false;				
+			}
+		});
+	</script>
   </body>
 </html>
 
