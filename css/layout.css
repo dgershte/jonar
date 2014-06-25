@@ -1,0 +1,242 @@
+html, body
+{
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 16px;
+	font-size: light;
+	line-height: 22px;
+	color: #eee;
+	-webkit-text-size-adjust: none;
+	min-width: 360px;
+}
+h1, h2, h3, h4, h5, h6
+{
+	line-height: 1;
+	color: #eee;
+	font-weight: bold;
+	font-size: 40px;
+	margin: 0 0 10px 0;
+}
+p
+{
+	margin: 0 0 10px 0;
+}
+a, a:link, a:active, a:visited, a:hover
+{
+	color: #fff;
+}
+
+
+body
+{
+	background: #666;
+}
+
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+}
+#navbar {
+	background-color:#3498db;
+	border:none;
+}
+
+.navbar-blue {
+	background-color: #3498db;
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+	color:white;
+	font-size:20px;
+}
+
+.navbar-blue a {
+	color:white;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #2980b9;
+}
+
+.navbar-brand a{
+	color:white !important;
+}
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.navbar-nav>li>a:hover {
+	background-color:#3498db;
+	color:#2980b9;
+}
+
+.nav-justified {
+}
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+#nav-container {
+	padding:10px 0;
+}
+
+.navbar-brand {
+	padding:0;
+}
+
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+margin-left: 15px;
+}
+
+.nav>li>a {
+position: relative;
+display: block;
+padding: 15px 40px;
+}
+
+
+
+#menu
+{
+	background: #222;
+}
+#menu *
+{
+	font-size: 16px;
+}
+
+#menu li:after
+{
+	margin-left: 60px;
+}
+#menu li a
+{
+	line-height: 40px;
+}
+#menu li a:hover
+{
+	background-color: rgba( 0, 0, 0, 0.2 );
+}
+#menu .icon
+{
+	margin: 0 20px 0 3px;
+	opacity: 0.6;
+}
+
+.icon{
+	width:15px;
+}
+
+#page
+{
+	box-shadow: none !important;
+}
+#page nav
+{
+	display: none;
+}
+
+a#open-icon-header
+{
+	background: center center no-repeat transparent;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE1JREFUeNpi/P//PwOtARMDHQBdLGFBYt+nkR2KjEhxQqvIYaR7cD2glSWMo0mY3DiJo5Edi4ZPEqZ7nMSP5pPRon60qB9NwpQDgAADAMIxHUJvWs/TAAAAAElFTkSuQmCC);
+
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+section
+{
+	height: auto;
+}
+section > div
+{
+	max-width: 80%;
+	padding: 100px 20px;
+	margin: auto;
+}
+
+#about
+{
+	background: #1ab8d3;
+}
+#features
+{
+	background: #d2d057;
+}
+#pricing
+{
+	background: #ff8286;
+}
+#login
+{
+	background: #52ae87;
+}
+
+.showmore {
+	display:none;
+}
+
+h1 small {
+	color:white !important;
+}
+
+.more:hover {
+	cursor:pointer;
+	border-bottom:1px solid white;
+}
+
+
+@media all and (min-width: 500px) {
+	a#open-icon-header
+	{
+		display: none;
+	}
+}
+@media all and (max-width: 499px) {
+	#open-icon-menu
+	{
+		display: none;
+	}
+}
+@media all and (min-width: 900px) {
+	#open-icon-menu
+	{
+		display: none;
+	}
+	#mmenu-blocker
+	{
+		display: none !important;
+	}
+}
+
