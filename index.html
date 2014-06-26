@@ -64,11 +64,11 @@
           <ul class="nav navbar-nav">
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#paragon">Paragon</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#partnerships">Partnerships</a></li>
-            <li><a href="#whoweare">Who We Are</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#section1">Paragon</a></li>
+            <li><a href="#section2">News</a></li>
+            <li><a href="#section3">Partnerships</a></li>
+            <li><a href="#section4">Who We Are</a></li>
+            <li><a href="#section5">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -79,31 +79,27 @@
 		<p class="lead text-right">for apparel</p>
 		</div>
     </section>
-	<section id="marketing">
+	<section id="section1">
 		<div class="container marketing">
 			<div class="row featurette">
         		<div class="col-md-7">
           			<h2 class="featurette-heading">Notice something different?<span class="text-muted">We've changed our look</span></h2>
           			<p class="lead">find out why</p>
 				</div>
-        		<div class="col-md-5">
-        		</div>
 			</div>
 		</div>
 	</section>
-	<section id="paragon">
+	<section id="section2">
 		<div class="container marketing">
 			<div class="row featurette">
         		<div class="col-md-7">
           			<h2 class="featurette-heading">Paragon<span class="text-muted">Some subtitle about Paragon</span></h2>
           			<p class="lead">find out more</p>
 				</div>
-        		<div class="col-md-5">
-        		</div>
       		</div>
 		</div>
 	</section>
-	<section id="news">
+	<section id="section3">
 		<div class="container marketing">
 			<div class="row featurette">
         		<div class="col-md-7">
@@ -115,7 +111,7 @@
       		</div>
 		</div>
 	</section>
-	<section id="partnerships">
+	<section id="section4">
 		<div class="container marketing">
 			<div class="row featurette">
         		<div class="col-md-7">
@@ -127,12 +123,31 @@
       		</div>
 		</div>
 	</section>
-	<section id="whoweare">
-    <div class="container">
-    	<h2 class="center">WHO WE ARE STUFF GOES HERE</h2>
-	</div> <!-- /container -->
+	<section id="section5">
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+          			<h2 class="featurette-heading">The future of ERP<span class="text-muted">ERP doesn't have to be what it used to be</span></h2>
+          			<p class="lead">find out where it's heading</p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+      		</div>
+		</div>
 	</section>
-	<section id="contact">
+	<section id="section6">
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+          			<h2 class="featurette-heading">Cloud<span class="text-muted"></span></h2>
+          			<p class="lead">find out more</p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+      		</div>
+		</div>
+	</section>
+	<section id="section7">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
@@ -153,17 +168,21 @@
 	</section>
     <script src="js/jquery.js"></script>
 	<script>
+		var secHeight = 800;
 
-		var sections = ["main","marketing","paragon","news","partnerships","whoweare","contact"];
+		var sections = ["main",
+						"section1",
+						"section2",
+						"section3",
+						"section4",
+						"section5",
+						"section6",
+						"section7",]
 
 		function getCurrentSection(ypos) {
-			if(ypos < 500) return 0;
-			else if( ypos < 1300 ) return 1;
-			else if( ypos < 2100 ) return 2;
-			else if( ypos < 2900 ) return 3;
-			else if( ypos < 3700 ) return 4;
-			else if( ypos < 4500 ) return 5;
-			else if( ypos < 5300 ) return 6;
+			for(var i = 0; i < sections.length; i++) {
+				if(ypos < secHeight*(i+1)) return i;
+			}
 		}
 		
 		$("#updown").click( function(e) {
@@ -175,7 +194,7 @@
 				if(index == 0 ) section = sections[index];
 				else section = sections[index-1];
 			} else if(elm.id == "downarrow") {
-				if(index == 6) section = sections[index];
+				if(index == sections.length-1) section = sections[index];
 				else section = sections[index+1];
 			}
 			if(section != ""){

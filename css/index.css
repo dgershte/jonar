@@ -203,7 +203,6 @@ section {
 }
 
 #main {
-	height:500px;
 	background-image:url("../images/stock-illustration-17715537-packagedeals.jpg");
 	        background-color: white;
         background-size: auto 100%;
@@ -219,24 +218,28 @@ section {
 #main p {
 	font-size:50px;
 }
-#marketing {
+#section1 {
 	background-color:#0468BF;
 	color:white;
 }
 
-#paragon {
+#section2 {
 	background-color:#14A670;
 }
-#news {
+#section3 {
 	background-color:#1abc9c;
 }
-#partnerships {
+#section4 {
 	background-color:#ECF2D8;
 }
-#whoweare {
+#section5 {
 	background-color:#F2BC1B;
 }
-#contact {
+#section6 {
+	background-color:#0468BF;
+	color:white;
+}
+#section7 {
 	height:auto;	
 	background-image:url(../images/montrealbg.jpg);
 	background-repeat:no-repeat;
