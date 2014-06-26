@@ -121,6 +121,18 @@ padding: 15px 40px;
 }
 
 
+#updown {
+	position:fixed;
+	right:10px;
+	top:50%;
+font-size: 40px;
+color: rgba(0,0,0,0.3);
+	cursor:pointer;
+}
+
+#updown .glyphicon:hover {
+	color:rgba(0,0,0,0.7);
+}
 
 #menu
 {
@@ -146,7 +158,6 @@ padding: 15px 40px;
 #menu .icon
 {
 	margin: 0 20px 0 3px;
-	opacity: 0.6;
 }
 
 .icon{
@@ -178,6 +189,7 @@ a#open-icon-header
 section
 {
 	height: auto;
+	padding-top:50px;
 }
 section > div
 {
@@ -186,21 +198,24 @@ section > div
 	margin: auto;
 }
 
-#about
-{
-	background: #1ab8d3;
+h2 {
+	color:#444!important;
 }
-#features
-{
-	background: #d2d057;
+
+#section1 {
+	background:#77D7FF;
+	color:#444!important;
 }
-#pricing
-{
-	background: #ff8286;
+
+#section2{
+	background:#3C74A6;
 }
-#login
-{
-	background: #52ae87;
+#section3{
+	background:#C94A63;
+}
+#section4{
+	background:#FFFED4;
+	color:#444!important;
 }
 
 .showmore {
@@ -208,7 +223,7 @@ section > div
 }
 
 h1 small {
-	color:white !important;
+	color:white;
 }
 
 .more:hover {
