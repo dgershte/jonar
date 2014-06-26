@@ -29,11 +29,11 @@ html.mm-opening .mm-page {
 
 @media all and (max-width: 175px) {
 	html.mm-opening .mm-page {
-		left: 140px;
+		left: 150px;
 	}
 }
 @media all and (min-width: 550px) {
 	html.mm-opening .mm-page {
-		left: 440px;
+		left: 150px;
 	}
 }
