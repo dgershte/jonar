@@ -124,6 +124,12 @@ color: rgba(0,0,0,0.3);
     width:30px;
     text-align:center;
     margin:5px 0;
+    opacity:0.5;
+}
+
+.social-media div:hover {
+    opacity:1;
+    cursor:pointer;
 }
 
 .social-media img {
@@ -222,8 +228,10 @@ padding: 13px 40px;
 
 
 body#index section {
-	height:800px;
-	padding:100px 0;
+	padding:100px 0 0;
+    margin-bottom:-100px;
+    min-height:800px;
+    position:relative;
 }
 
 #main {
@@ -254,7 +262,8 @@ body#index section {
 	background-color:#FFE189;
 }
 #section4 {
-	background-color:#ECF2D8;
+	//background-color:#ECF2D8;
+	background-color:#f46b28;
 }
 #section5 {
 	background-color:#14A670;
@@ -268,6 +277,13 @@ body#index section {
 	background-image:url(../images/montrealbg.jpg);
 	background-repeat:no-repeat;
  	background-size: 100%;
+}
+
+.overlap {
+position: relative;
+z-index: 10;
+width: 800px;
+margin: auto;
 }
 
 .center {
@@ -537,6 +553,9 @@ and (max-device-width : 568px) { /* STYLES GO HERE */
 	height:30px;
   }
 
+  .social-media {
+      display:none;
+  }
 }
 
 
