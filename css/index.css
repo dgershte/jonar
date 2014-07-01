@@ -96,6 +96,10 @@ body {
     font-weight:100;
 }
 
+p {
+    font-weight:200;
+}
+
 #updown {
 	position:fixed;
 	right:10px;
