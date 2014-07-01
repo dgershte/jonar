@@ -92,14 +92,13 @@
 
 body {
   	padding-top: 50px;
-  	padding-bottom: 20px;
 	font-size:20px;
 }
 
 #updown {
 	position:fixed;
 	right:10px;
-	top:50%;
+	top:45%;
 font-size: 40px;
 color: rgba(0,0,0,0.3);
 	cursor:pointer;
@@ -107,6 +106,23 @@ color: rgba(0,0,0,0.3);
 
 #updown .glyphicon:hover {
 	color:rgba(0,0,0,0.7);
+}
+
+.social-media {
+    position:fixed;
+    left:0;
+    top:40%;
+}
+
+.social-media > div {
+    height:30px;
+    width:30px;
+    text-align:center;
+    margin:5px 0;
+}
+
+.social-media img {
+    height:100%;
 }
 
 #navbar {
@@ -197,7 +213,7 @@ padding: 15px 40px;
 }
 
 
-section {
+body#index section {
 	height:800px;
 	padding:100px 0;
 }
@@ -578,3 +594,89 @@ body#paragon .row {
 .icon img {
 	width:30px;
 }
+
+.topsection {
+    height:400px;
+    background-color:white;
+}
+
+/************ PARTNERSHIPS *************/
+#partnerships {
+    background-color:#F5F5F5;
+}
+
+.partners-list {
+    position:relative;
+    margin:auto;
+    padding:0 100px;
+}
+
+.partners-list h2 {
+    color:#8D8D8D;
+}
+
+.partner-logo {
+    background:url('../images/partner1.jpeg') no-repeat center;
+    height:100%;
+    width:100%;
+
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
+
+.partner {
+    width:200px;
+    height:200px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+            transform: rotate(45deg);
+    background-color:white;
+    float:left;
+    position:relative;
+}
+
+.partner-top {
+    margin:0 50px 100px 50px;
+}
+
+.partner-bottom {
+    margin:150px -100px -50px -100px;
+}
+
+
+/************** WHO WE ARE *************/
+#officeimg {
+    background: url(../images/office.png);
+    background-size:cover;
+    height:550px;
+}
+
+.team {
+    font-size:14px;
+    color:grey;
+}
+/************* CONTACT ****************/
+#contact {
+    background-image:url(../images/montrealbg.jpg);
+    background-size:cover;
+}
+
+/************** NEWS **************/
+.grey-section {
+    background-color:#f8f8f8;
+    min-height:500px;
+    padding:50px 0;
+}
+
+
+.white-section {
+    padding:100px 0;
+    margin:100px auto;
+    min-height:500px;
+    color:#ccc;
+}
+
+.white-section h1 {
+   color:#7e7e7e;
+  } 
