@@ -14,7 +14,7 @@
   text-align: center;
 }
 .marketing h2 {
-  font-weight: normal;
+  font-weight: 100;
 }
 .marketing .col-lg-4 p {
   margin-right: 10px;
@@ -91,8 +91,9 @@
 
 
 body {
-  	padding-top: 50px;
+  	padding-top: 70px;
 	font-size:20px;
+    font-weight:100;
 }
 
 #updown {
@@ -260,10 +261,6 @@ body#index section {
 	background-image:url(../images/montrealbg.jpg);
 	background-repeat:no-repeat;
  	background-size: 100%;
-}
-
-address {
-	color:white;
 }
 
 .center {
@@ -613,6 +610,7 @@ body#paragon .row {
 
 .partners-list h2 {
     color:#8D8D8D;
+    font-weight:100;
 }
 
 .partner-logo {
@@ -660,6 +658,26 @@ body#paragon .row {
 #contact {
     background-image:url(../images/montrealbg.jpg);
     background-size:cover;
+    padding:150px 0;
+    color:white;
+}
+
+address a {
+    color:white;
+}
+
+.contact-icon {
+    width:100%;
+}
+
+#contact-form {
+    margin:auto;
+    float:none;
+}
+
+label {
+    padding-top:0;
+    font-weight:100;
 }
 
 /************** NEWS **************/
@@ -669,6 +687,11 @@ body#paragon .row {
     padding:50px 0;
 }
 
+.darkblue-section {
+    background-color:#272d3a;
+    min-height:500px;
+    padding:100px 0;
+}
 
 .white-section {
     padding:100px 0;

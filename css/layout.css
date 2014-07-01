@@ -7,11 +7,8 @@ html, body
 }
 body
 {
-	font-family: Arial, Helvetica, Verdana;
-	font-size: 16px;
-	font-size: light;
-	line-height: 22px;
-	color: #eee;
+    font-weight:100;
+    color: #eee;
 	-webkit-text-size-adjust: none;
 	min-width: 360px;
 }
@@ -26,6 +23,7 @@ h1, h2, h3, h4, h5, h6
 p
 {
 	margin: 0 0 10px 0;
+    font-weight:200;
 }
 a, a:link, a:active, a:visited, a:hover
 {
