@@ -84,14 +84,21 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .featurette-heading {
   }
 }
 
 
+* {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:    all 0.5s ease;
+    -ms-transition:     all 0.5s ease;
+    -o-transition:      all 0.5s ease;
+    transition:         all 0.5s ease;
+}
 body {
-  	padding-top: 70px;
+  	padding-top: 50px;
 	font-size:20px;
     font-weight:100;
 }
@@ -107,6 +114,7 @@ p {
 font-size: 40px;
 color: rgba(0,0,0,0.3);
 	cursor:pointer;
+    z-index:10;
 }
 
 #updown .glyphicon:hover {
@@ -117,6 +125,7 @@ color: rgba(0,0,0,0.3);
     position:fixed;
     left:0;
     top:40%;
+    z-index:10;
 }
 
 .social-media > div {
@@ -147,6 +156,10 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
 	color:white;
 }
 
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
 .navbar-blue a {
 	color:white;
 }
@@ -155,6 +168,14 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #2980b9;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    width:100%;
+}
+
+.dropdown-menu {
+    background-color:#3498db;
 }
 
 .navbar-brand a{
@@ -190,29 +211,31 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 
 .navbar-nav>li>a:hover {
-	background-color:#3498db;
-	//color:#2980b9;
-    border-bottom:1px solid white;
+	background-color:#218ED8;
+
 }
 
 .nav-justified {
 }
 .nav-justified > li > a {
   padding-top: 15px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   margin-bottom: 0;
   font-weight: bold;
   color: white;
   text-align: center;
-  border-bottom:1px solid #2980db;
 }
 
 #nav-container {
-	padding:10px 0;
+    padding:0;
 }
 
 .navbar-brand {
-	padding:0;
+	padding:10px 0 0 0;
+}
+
+.navbar-brand img {
+    height:30px;
 }
 
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
@@ -222,25 +245,54 @@ margin-left: 15px;
 .nav>li>a {
 position: relative;
 display: block;
-padding: 13px 40px;
-  border-bottom:1px solid #3498db;
+padding: 15px 40px;
 }
 
 
-body#index section {
-	padding:100px 0 0;
-    margin-bottom:-100px;
-    min-height:800px;
+.icon-bar {
+    background-color:white;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    color:white;
+    background-color:#218ED8;
+}
+
+.dropdown-menu > li > a {
+    color:white;
+    font-weight:100;
+}
+
+.navbar-nav .open .dropdown-menu > li > a {
+    color:white;
+    font-weight:100;
+}
+
+.navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color:#218ED8;
+}
+
+section {
     position:relative;
+    padding:100px 0;
+    min-height:600px;
+}
+
+.fb-like-box {
+    z-index: 10;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.fb_iframe_widget {
+    display: none;
+    position: fixed !important;
 }
 
 #main {
-	background-image:url("../images/stock-illustration-17715537-packagedeals.jpg");
-	        background-color: white;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        background-position: left top;
-
+	background: white;
+    background-size:cover;
 }
 
 #main h1 {
@@ -562,7 +614,7 @@ and (max-device-width : 568px) { /* STYLES GO HERE */
 /********** PARAGON ***********/
 body#paragon {
 	background-color:#edf1f2;
-	padding-top:70px;
+	padding-top:50px;
 }
 
 body#paragon img {
@@ -660,6 +712,10 @@ body#paragon .row {
     position:relative;
 }
 
+.partner:hover {
+    background-color:rgba(52, 152, 219, 0.24);
+    cursor:pointer;
+}
 .partner-top {
     margin:0 50px 100px 50px;
 }
@@ -710,22 +766,29 @@ label {
 .grey-section {
     background-color:#f8f8f8;
     min-height:500px;
-    padding:50px 0;
 }
 
 .darkblue-section {
     background-color:#272d3a;
     min-height:500px;
-    padding:100px 0;
 }
 
 .white-section {
-    padding:100px 0;
-    margin:100px auto;
     min-height:500px;
-    color:#ccc;
 }
 
 .white-section h1 {
    color:#7e7e7e;
-  } 
+  }
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .nav>li>a {
+   //   padding-left:10px;
+  }
+}

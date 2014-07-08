@@ -23,6 +23,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<script>
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
@@ -44,17 +45,28 @@
   </head>
 
   <body id="index">
-	<div id="updown">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=280161028800008&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-like-box" style="display:none" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" data-width="300px" data-height="400px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+      <div id="updown">
 		<span id="uparrow" class="glyphicon glyphicon-upload"></span>
 		<br>
 		<span id="downarrow" class="glyphicon glyphicon-download"></span>
     </div>
     <div class="social-media">
-        <div><img src="images/twitter.png"></img></div>
-        <div><img src="images/facebook.png"></img></div>
-        <div><img src="images/blog.png"></img></div>
-        <div><img src="images/email.png"></img></div>
+        <div id="twitter"><img src="images/twitter.png"></img></div>
+        <div id="facebook"><img src="images/facebook.png"></img></div>
+        <div id="blog"><img src="images/blog.png"></img></div>
+        <div id="email"><img src="images/email.png"></img></div>
     </div>
+
 	<div class="navbar navbar-blue navbar-fixed-top" role="navigation">
       <div id="nav-container" class="container">
         <div class="navbar-header">
@@ -64,27 +76,39 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#main"><img height=50" src="images/jonarlogo2.png"/></a>
+          <a class="navbar-brand" href="index.html"><img src="images/jonarlogo2.png"/></a>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="paragon.html">Paragon</a></li>
+        <div class="navbar-collapse collapse in" style="height: auto;">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paragon<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="paragon.html#about">About</a></li>
+                    <li><a href="paragon.html#features">Features</a></li>
+                    <li><a href="paragon.html#pricing">Pricing</a></li>
+                    <li><a href="paragon.html#login">Login</a></li>
+                </ul>
+            </li>
             <li><a href="news.html">News</a></li>
-            <li><a href="partnerships.html">Partnerships</a></li>
+            <li class="dropdown">
+                <a href="partnerships.html" class="dropdown-toggle" data-toggle="dropdown">Partnerships<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Section 1</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                </ul>
+            </li>
             <li><a href="about.html">Who We Are</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html">Login</a></li>
+            <li><a href="login.html">Login</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 	<section id="main">
 		<div class="container">
-		<h1 class="text-right"><strong>ERP Software</strong></h1>
-		<p class="lead text-right">for apparel</p>
-		</div>
+            <img width="100%" src="images/jonarbg.png"/>
+        </div>
     </section>
 	<section id="section1">
 		<div class="container marketing">
@@ -157,9 +181,8 @@
       		</div>
 		</div>
 	</section>
-    <script src="js/jquery.js"></script>
 	<script>
-		var secHeight = 800;
+        var secHeights;
 
 		var sections = ["main",
 						"section1",
@@ -169,11 +192,14 @@
 						"section5",
                         "section6"];
 
-		function getCurrentSection(ypos) {
-			for(var i = 0; i < sections.length; i++) {
-				if(ypos < secHeight*(i+1)) return i;
-			}
-		}
+        function getCurrentSection(ypos) {
+            for(var i = 0; i < sections.length; i++) {
+                var sec = $("#"+sections[i]);
+                var top = sec.position().top;
+                var height = $(sec).height();
+                if(ypos < (top + height)) return i;
+            }
+        }
 		
 		$("#updown").click( function(e) {
 			var elm = e.target;
@@ -193,7 +219,16 @@
 	        	}, 1000);
 	        	return false;				
 			}
-		});
+        });
+
+        $("#facebook").hover( function () {
+            $(".fb-iframe-widget").show("slow");
+            $(".fb-like-box").show("slow");
+            }, function() {
+            $(".fb-iframe-widget").hide("fast");
+            $(".fb-like-box").hide("fast");
+
+        });
 	</script>
   </body>
 </html>

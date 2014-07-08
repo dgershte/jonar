@@ -1,56 +1,3 @@
-@media (min-width: 768px) {
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left:  15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left:  0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-}
-
-#navbar {
-	background-color:#3498db;
-	border:none;
-}
-
-
-#nav-container {
-	padding:10px 0;
-}
-
-.navbar-brand {
-	padding:0;
-}
-
-.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
-margin-left: 15px;
-}
-
-
-
-#updown {
-	position:fixed;
-	right:10px;
-	top:50%;
-font-size: 40px;
-color: rgba(0,0,0,0.3);
-	cursor:pointer;
-}
-
-#updown .glyphicon:hover {
-	color:rgba(0,0,0,0.7);
-}
 
 #menu
 {
@@ -107,32 +54,9 @@ a#open-icon-header
 section
 {
 	height: auto;
-	padding-top:50px;
-}
-section > div
-{
-	max-width: 80%;
-	padding: 100px 20px;
-	margin: auto;
 }
 
 h2 {
-	color:#444!important;
-}
-
-#section1 {
-	background:#77D7FF;
-	color:#444!important;
-}
-
-#section2{
-	background:#3C74A6;
-}
-#section3{
-	background:#C94A63;
-}
-#section4{
-	background:#FFFED4;
 	color:#444!important;
 }
 

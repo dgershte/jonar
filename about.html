@@ -58,20 +58,33 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img height=50" src="images/jonarlogo2.png"/></a>
+          <a class="navbar-brand" href="index.html"><img src="images/jonarlogo2.png"/></a>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="paragon.html">Paragon</a></li>
+        <div class="navbar-collapse collapse in" style="height: auto;">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="paragon.html" class="dropdown-toggle" data-toggle="dropdown">Paragon<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="paragon.html#about">About</a></li>
+                    <li><a href="paragon.html#features">Features</a></li>
+                    <li><a href="paragon.html#pricing">Pricing</a></li>
+                    <li><a href="paragon.html#login">Login</a></li>
+                </ul>
+            </li>
             <li><a href="news.html">News</a></li>
-            <li><a href="partnerships.html">Partnerships</a></li>
+            <li class="dropdown">
+                <a href="partnerships.html" class="dropdown-toggle" data-toggle="dropdown">Partnerships<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Section 1</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                </ul>
+            </li>
             <li><a href="about.html">Who We Are</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
