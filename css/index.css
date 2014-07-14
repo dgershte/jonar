@@ -281,7 +281,7 @@ section {
 #main {
 	background: white;
     background-size:cover;
-    padding-bottom:0;
+    padding:50px 0 0 0;
 }
 
 #main h1 {
@@ -443,6 +443,9 @@ body#paragon .row {
 #paragon-accounting {
     background-color:#3498db;
 }
+#paragon-accounting .paragon-inner {
+    background-image:url('../images/animation/accounting.png');
+}
 #paragon-shipping {
     background-color:#1abc9c;
 }
@@ -476,14 +479,23 @@ body#paragon .row {
 #paragon-hr {
     background-color:#16a085;
 }
+#paragon-hr .paragon-inner {
+    background-image:url('../images/animation/humanresource.png');
+}
 #paragon-bi {
     background-color:#d35400;
+}
+#paragon-bi .paragon-inner {
+    background-image:url('../images/animation/bi.png');
 }
 #paragon-edi {
     background-color:#f39c12;
 }
 #paragon-management{
     background-color:#2980b9;
+}
+#paragon-management .paragon-inner {
+    background-image:url('../images/animation/management.png');
 }
 #paragon-other{
     background-color:#27ae60;

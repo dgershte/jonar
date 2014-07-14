@@ -7,7 +7,6 @@
 		<title>Paragon</title>
     	<link href="css/bootstrap.css" rel="stylesheet">
     	<link href="css/index.css" rel="stylesheet">
-
 	</head>
 	<body>
 	<div id="updown">
@@ -31,10 +30,10 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paragon<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="paragon.html#paragon-section1">About</a></li>
-                    <li><a href="paragon.html#paragon-section2">Features</a></li>
-                    <li><a href="paragon.html#paragon-section3">Pricing</a></li>
-                    <li><a href="paragon.html#paragon-section4">Login</a></li>
+                    <li><a href="#paragon-section1">About</a></li>
+                    <li><a href="#paragon-section2">Features</a></li>
+                    <li><a href="#paragon-section3">Pricing</a></li>
+                    <li><a href="#paragon-section4">Login</a></li>
                 </ul>
             </li>
             <li><a href="news.html">News</a></li>
@@ -95,7 +94,7 @@
                     </div>
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Accounting</h2>
-                        <img class="text-center" src="images/animation/productdesign.png"/>
+                        <img class="text-center" src="images/animation/accounting.png"/>
 					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -167,7 +166,7 @@
                     </div>
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Human Resources</h2>
-                        <img class="text-center" src="images/animation/productdesign.png"/>
+                        <img class="text-center" src="images/animation/humanresource.png"/>
 					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -179,7 +178,7 @@
                     </div>
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Business Intelligence</h2>
-                        <img class="text-center" src="images/animation/productdesign.png"/>
+                        <img class="text-center" src="images/animation/bi.png"/>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-edi">
@@ -197,7 +196,7 @@
                     </div>
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Management</h2>
-                        <img class="text-center" src="images/animation/productdesign.png"/>
+                        <img class="text-center" src="images/animation/management.png"/>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-other">
@@ -231,6 +230,21 @@
 	    <script src="js/bootstrap.js"></script>
 	    <script src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
             var curOpen = $("#paragon-cs");
 			$(document).ready( function() {
 				$(".more").click( function(e) {
@@ -281,11 +295,15 @@
                     $(curOpen).removeClass("paragon-feature-open");
                     $(curOpen).find(".paragon-inner").show(0);
                     $(curOpen).find(".paragon-inner-show").hide(0);
-
-                    $(this).addClass("paragon-feature-open");
-                    $(this).find(".paragon-inner:first-child").hide(0);
-                    $(this).find(".paragon-inner-show").show(0);
                     
+                    var temp = $(this);
+                    
+                    $(temp).find(".paragon-inner:first-child").hide(0);
+                    $(temp).addClass("paragon-feature-open");
+                    
+                    setTimeout( function() {
+                        $(temp).find(".paragon-inner-show").show(0);
+                        },250);
                     var bg = $(this).css("background-color");
                     $("#paragon-section2").css("background-color",bg);
                     curOpen = $(this);
