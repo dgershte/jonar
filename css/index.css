@@ -621,6 +621,7 @@ label {
 
 .white-section {
     min-height:500px;
+    background-color:white;
 }
 
 .white-section h1 {
