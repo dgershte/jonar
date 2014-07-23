@@ -11,7 +11,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 500);
         return false;
       }
     }
@@ -20,8 +20,8 @@ $(function() {
 
 function getCurrentSection(ypos) {
     for(var i = 0; i < sections.length; i++) {
-        var sec = $("#"+sections[i]);
-        var top = sec.position().top;
+        var sec = $(sections[i]);
+        var top = $(sec).position().top;
         var height = $(sec).height();
         if(ypos < (top + height)) return i;
     }
@@ -36,6 +36,9 @@ $(document).ready( function() {
         $(".fb-like-box").css("opacity","0");
     });
     $("#updown").click( function(e) {
+        sections = $("section");
+        if(sections == null) return;
+        sections = jQuery.makeArray(sections);
         var elm = e.target;
         var ypos = $(window).scrollTop();
         var index = getCurrentSection(ypos);
@@ -49,8 +52,8 @@ $(document).ready( function() {
         }
         if(section != ""){
             $('html,body').animate({
-                scrollTop: $("#"+section).offset().top
-            }, 1000);
+                scrollTop: $(section).offset().top
+            }, 500);
             return false;				
         }
     });

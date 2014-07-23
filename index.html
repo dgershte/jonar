@@ -22,38 +22,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script>
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
-	</script>
-
   </head>
 
   <body id="index">
       <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=280161028800008&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
     <div class="fb-like-box" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" data-width="300px" data-height="400px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
       <div id="updown">
 		<span id="uparrow" class="glyphicon glyphicon-upload"></span>
@@ -81,7 +53,7 @@
         <div class="navbar-collapse collapse" style="height: auto;">
             <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paragon<span class="caret"></span></a>
+                <a href="paragon.html" class="dropdown-toggle" data-toggle="dropdown">Paragon<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="paragon.html#paragon-section1">About</a></li>
                     <li><a href="paragon.html#paragon-section2">Features</a></li>
@@ -89,7 +61,7 @@
                     <li><a href="paragon.html#paragon-section4">Login</a></li>
                 </ul>
             </li>
-            <li><a href="news.html">News</a></li>
+            <li><a href="http://www.jonar.com/jonarblog/">News</a></li>
             <li class="dropdown">
                 <a href="partnerships.html" class="dropdown-toggle" data-toggle="dropdown">Partnerships<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -100,22 +72,30 @@
             </li>
             <li><a href="about.html">Who We Are</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="login.html" id="trynow"><button class="btn btn-warning">Try Now</button></a></li>
+            <li><a id="login"href="login.html">Login</a></li>
           </ul>
         </div>
       </div>
       </div>
 	<section id="main">
 		<div class="container">
-            <img width="100%" src="images/animation/jonarflat.gif"/>
+            <img id="jonarbg" width="100%" src="images/jonarbg.png"/>
+            <div id="maintext">
+                <h1 class="featurette-heading">Software that makes <b>your</b> business <b>better</b></h1>
+                <button type="submit" class="btn btn-primary">What is ERP?</button>
+            </div>
         </div>
     </section>
 	<section id="section1">
 		<div class="container marketing">
 			<div class="row featurette">
                 <div class="col-md-5">
-          			<h2 class="featurette-heading">Notice something different?<span class="text-muted">We've changed our look</span></h2>
-          			<p class="lead">find out why</p>
+                    <h2 class="featurette-heading">You might have noticed something different about us.</h2>
+                    <a href="">
+                        <button type="submit" class="btn btn-warning">find out why</button>
+                    </a>
+          			<p class="lead"></p>
                 </div>
             </div>
             <img class="featurette-image img-responsive overlap" src="images/screens.png">
@@ -125,31 +105,22 @@
 		<div class="container marketing">
 			<div class="row featurette">
         		<div class="col-md-7">
-          			<h2 class="featurette-heading">Paragon<span class="text-muted">Some subtitle about Paragon</span></h2>
-          			<p class="lead">find out more</p>
+                    <h2 class="featurette-heading">Paragon<br><span class="text-muted">A model of excellence</span></h2>
+                    <a href="paragon.html">
+                        <button type="submit" class="btn btn-warning">find out more</button>
+                    </a>
+          			<p class="lead"></p>
                 </div>
             </div>
         <img class="featurette-image img-responsive overlap" src="images/paragon_screenshot.png">
-		</div>
-	</section>
-	<section id="section3">
-		<div class="container marketing">
-			<div class="row featurette">
-        		<div class="col-md-7">
-          			<h2 class="featurette-heading">BI<span class="text-muted">Some subtitle about BI</span></h2>
-          			<p class="lead">find out more</p>
-				</div>
-        		<div class="col-md-5">
-        		</div>
-      		</div>
 		</div>
 	</section>
 	<section id="section4">
 		<div class="container marketing">
 			<div class="row featurette">
         		<div class="col-md-7">
-          			<h2 class="featurette-heading">What is ERP?<span class="text-muted">Some subtitle about ERP</span></h2>
-          			<p class="lead">find out more</p>
+                    <h2 class="featurette-heading">ERP sucks<br><span class="text-muted"><a href="paragon.html">Learn how we’re making it better</a></span></h2>
+          			<p class="lead"></p>
 				</div>
         		<div class="col-md-12">
         		</div>
@@ -157,14 +128,32 @@
             <img class="featurette-image img-responsive" src="images/charts.png">
 		</div>
 	</section>
+	<section id="section3">
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+                    <h2 class="featurette-heading">What is B.I.?<br><span class="text-muted"></span></h2>
+          			<p class="lead"></p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+      		</div>
+		</div>
+	</section>
 	<section id="section5">
 		<div class="container marketing">
 			<div class="row featurette">
         		<div class="col-md-7">
-          			<h2 class="featurette-heading">The future of ERP<span class="text-muted">ERP doesn't have to be what it used to be</span></h2>
-          			<p class="lead">find out where it's heading</p>
+                    <h2 class="featurette-heading">What is “The Cloud”?<br><span class="text-muted"></span></h2>
+                    <p class="lead">
+                    Everyone just loooves this term, don’t they? The Cloud, in tech speak, refers to storing and
+                    accessing your applications on the Internet instead of your computer’s network. Paragon, our newest 
+                    ERP solution, is a cloud application, which means you can access it from anywhere in the world, at any 
+                    time of the day, as long as you’re connected to the Internet.
+                    </p>
 				</div>
-        		<div class="col-md-5">
+        		<div class="col-md-12">
+                    <img class="featurette-image img-responsive"src="images/cloud.png"/>
         		</div>
       		</div>
 		</div>
@@ -173,24 +162,88 @@
 		<div class="container marketing">
 			<div class="row featurette">
         		<div class="col-md-7">
-          			<h2 class="featurette-heading">Cloud<span class="text-muted"></span></h2>
-          			<p class="lead">find out more</p>
+                    <h2 class="featurette-heading">Internships<br><span class="text-muted">We use our experience to shape yours</span></h2>
+                    <p class="lead">
+                    At Jonar, interns don’t just fetch coffee or make photocopies. Well, sometimes they do, but
+                    only for themselves. Our interns work side-by-side with the Jonar team on projects that have a real 
+                    and meaningful impact. We believe that interns are brilliant contributors, out of the box thinkers and 
+                    valued collaborators for our team. We love our interns because they bring a new and fresh perspective 
+                    to everything we do. And, sometimes, we love them so much that we hire them straight out of their 
+                    internships.
+                    </p>
 				</div>
         		<div class="col-md-5">
         		</div>
       		</div>
 		</div>
-	</section>
+    </section>
+	<section id="section7">
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+                    <h2 class="featurette-heading">Social Responsibility<br>
+                        <span class="text-muted">Doing good in all that we do</span></h2>
+                    <p class="lead">
+                    We run our business with a genuine dedication to our 7 core values. We take these seriously seriously. 
+
+                    But, our business is more than just a business. We are truly committed to doing good in everything 
+
+                    we do. As a result, we provide a system that is not only a great product, but that also helps great 
+
+                    companies. We also work with great people who are also committed to the overall greater good and we 
+
+                    support worthwhile organizations that work hard every day to make a difference. We know this sounds 
+
+                    a little Miss America, but if we can make the world even the teeniest bit better, then we will strive to do 
+
+                    so.
+                    </br>
+                    </br>
+                    Check out our feel-good stories <button type=button" class="btn btn-warning">here</button>
+                    </p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+      		</div>
+		</div>
+    </section>
+	<section id="section8">
+		<div class="container marketing">
+			<div class="row featurette">
+        		<div class="col-md-7">
+                    <h2 class="featurette-heading">What our customers say about us<br>
+                        <span class="text-muted"></span></h2>
+                    <p class="lead">
+                    We asked our customers for brutal honesty. The good, the bad, and the ugly. We were pretty
+                    sure they would have a lot of good to share but we were actually more interested to hear about the bad. 
+                    That’s because we value our customers, so we work hard to make them happy and we work even harder 
+                    to fix the problem when they’re not happy.
+                    </p>
+				</div>
+        		<div class="col-md-5">
+        		</div>
+      		</div>
+		</div>
+    </section>
+    <div class="container">
+        <footer>
+            <span class="glyphicon glyphicon-globe"></span>
+            <a href="#">Canada - English</a>&nbsp|&nbsp<a style="color:grey">Canada - French</a>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>© 2014 Jonar Systems. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
     <script src="js/index.js"></script>
-    <script>
-		sections = ["main",
-                    "section1",
-                    "section2",
-                    "section3",
-                    "section4",
-                    "section5",
-                    "section6"];
-	</script>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=280161028800008&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
   </body>
 </html>
 
