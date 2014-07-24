@@ -550,28 +550,71 @@ body#paragon .row {
     background-color:#F5F5F5;
 }
 
-.partners-list {
+
+
+
+
+/************** WHO WE ARE *************/
+
+.team {
+    font-size:14px;
+    color:grey;
+}
+#aoihi {
+    background: url(../images/causes/aoihi.jpg)  no-repeat center;
+}
+#cfri {
+    background: url(../images/causes/cfri.gif)  no-repeat center;
+}
+#cure {
+    background: url(../images/causes/cure.png)  no-repeat center;
+}
+#DDO {
+    background: url(../images/causes/DDO.png)  no-repeat center;
+}
+#icfr {
+    background: url(../images/causes/icfr.png)  no-repeat center;
+}
+#jdrf {
+    background: url(../images/causes/jdrf.png)  no-repeat center;
+}
+#ms {
+    background: url(../images/causes/ms.jpg)  no-repeat center;
+}
+#MUHC {
+    background: url(../images/causes/MUHC.png)  no-repeat center;
+}
+#parkinson {
+    background: url(../images/causes/parkinson.png)  no-repeat center;
+}
+#redCross {
+    background: url(../images/causes/redCross.gif)  no-repeat center;
+}
+#sef {
+    background: url(../images/causes/sef.png)  no-repeat center;
+}
+#ymca {
+    background: url(../images/causes/ymca.jpg)  no-repeat center;
+}
+.cause-logo {
+    height:100%;
+    width:100%;
+    text-align: center;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
+.causes-list {
     position:relative;
     margin:auto;
     padding:0 100px;
 }
 
-.partners-list h2 {
+.causes-list h2 {
     color:#8D8D8D;
     font-weight:100;
 }
-
-.partner-logo {
-    background:url('../images/partner1.jpeg') no-repeat center;
-    height:100%;
-    width:100%;
-
-    -ms-transform: rotate(-45deg); /* IE 9 */
-    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
-    transform: rotate(-45deg);
-}
-
-.partner {
+.cause {
     width:200px;
     height:200px;
     -ms-transform: rotate(45deg); /* IE 9 */
@@ -582,32 +625,21 @@ body#paragon .row {
     position:relative;
 }
 
-.partner:hover {
+.cause:hover {
     background-color:rgba(52, 152, 219, 0.24);
     cursor:pointer;
 }
-.partner-top {
+.cause-top {
     margin:0 50px 100px 50px;
 }
 
-.partner-bottom {
+.cause-bottom {
     margin:150px -100px -50px -100px;
 }
 
 
-/************** WHO WE ARE *************/
-#officeimg {
-    background: url(../images/office.png);
-    background-size:cover;
-    height:550px;
-}
-
-.team {
-    font-size:14px;
-    color:grey;
-}
 /************* CONTACT ****************/
-#contact {
+#support {
     background-image:url(../images/montrealbg.jpg);
     background-size:cover;
     padding:150px 0;
