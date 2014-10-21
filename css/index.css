@@ -35,13 +35,10 @@
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1;
   letter-spacing: -1px;
-	color:white;
 }
-
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -112,7 +109,7 @@ p {
 font-size: 40px;
 color: rgba(0,0,0,0.3);
 	cursor:pointer;
-    z-index:10;
+    z-index:20;
 }
 
 #updown .glyphicon:hover {
@@ -280,8 +277,20 @@ section {
     opacity:0;
 }
 
+#twitter-widget-0 {
+    z-index: 10;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 40px;
+    position: fixed !important;
+    display:none;
+    width:300px !important;
+    height:400px;
+}
+
 .fb_iframe_widget {
     position: fixed !important;
+    display:none;
 }
 
 #main {
@@ -289,6 +298,7 @@ section {
     background-size:cover;
     padding:0;
     height:auto !important;
+    color:grey;
 }
 #maintext {
     position: absolute;
@@ -310,15 +320,18 @@ color: grey;
 }
 
 #section2 {
+    color:white;
 	background-color:#1abc9c;
 }
 #section3 {
 	background-color:#FFE189;
 }
 #section4 {
+	color:white;
 	background-color:#f46b28;
 }
 #section5 {
+	color:white;
 	background-color:#85cbe0;
 }
 #section6 {
@@ -326,11 +339,7 @@ color: grey;
 	color:white;
 }
 #section7 {
-	/*height:auto;	
-	background-image:url(../images/montrealbg.jpg);
-	background-repeat:no-repeat;
- 	background-size: 100%;
-    */
+	color:white;
     background-color:#1abc9c;
 }
 #section8 {
@@ -450,6 +459,10 @@ body#paragon .row {
     background-position:center;
     background-size:35% auto;
 }
+.paragon-inner-show ul {
+    text-align:left;
+}
+
 .paragon-inner:hover {
     background-size:50%;
 }
@@ -472,13 +485,13 @@ body#paragon .row {
     background-image:url('../images/animation/shipping.png');
 }
 #paragon-manufacturing {
-    background-color:#f1c40f;
+    background-color:#e74c3c;
 }
 #paragon-manufacturing .paragon-inner {
     background-image:url('../images/animation/factory.png');
 }
 #paragon-warehousing {
-    background-color:#e74c3c;
+    background-color:#f1c40f;
 }
 #paragon-warehousing .paragon-inner {
     background-image:url('../images/animation/warehouse.png');
@@ -488,6 +501,12 @@ body#paragon .row {
 }
 #paragon-product .paragon-inner {
     background-image:url('../images/animation/productdesign.png');
+}
+#paragon-purchasing {
+    background-color:#d35400;
+}
+#paragon-purchasing .paragon-inner {
+    background-image:url('../images/animation/sales.png');
 }
 #paragon-sales {
     background-color:#2c3e50;
@@ -528,6 +547,13 @@ body#paragon .row {
 
 .showmore {
     display:none;
+}
+
+#faq h4 {
+    padding-top: 40px;
+    font-style: italic;
+    font-size: 25px;
+    color: #3498db;
 }
 
 @media (min-width:420px) and (max-width: 768px) {
@@ -604,16 +630,12 @@ body#paragon .row {
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
     transform: rotate(-45deg);
 }
+
 .causes-list {
     position:relative;
     margin:auto;
-    padding:0 100px;
 }
 
-.causes-list h2 {
-    color:#8D8D8D;
-    font-weight:100;
-}
 .cause {
     width:200px;
     height:200px;
@@ -665,6 +687,11 @@ label {
 }
 
 /************** NEWS **************/
+#blogiframe {
+    width:100%;
+    margin-top:-40px;
+}
+
 .grey-section {
     background-color:#f8f8f8;
     min-height:500px;
@@ -692,6 +719,6 @@ label {
 
 @media (max-width: 992px) {
   .nav>li>a {
-   //   padding-left:10px;
+    padding:5px 30px;
   }
 }

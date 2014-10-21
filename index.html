@@ -26,7 +26,10 @@
 
     <body id="index">
         <div id="fb-root"></div>
-        <div class="fb-like-box" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" data-width="300px" data-height="400px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+        <div class="fb-like-box" id="fblikebox" style="display:none" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" data-width="300px" 
+            data-height="400px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+        <a class="twitter-timeline" href="https://twitter.com/JonarSystemsInc" data-widget-id="267999508967866368"></a>
+        
         <div id="updown">
 		    <span id="uparrow" class="glyphicon glyphicon-upload"></span>
 		    <br>
@@ -34,9 +37,9 @@
         </div>
         
         <div class="social-media">
-            <div id="twitter"><img src="images/twitter.png"></img></div>
+            <div id="twitter"><img src="images/twitter.png"/></div>
             <div id="facebook"><img src="images/facebook.png"></img></div>
-            <div id="blog"><img src="images/blog.png"></img></div>
+            <div id="blog"><a href="news.html"><img src="images/blog.png"></a></img></div>
             <div id="email"><img src="images/email.png"></img></div>
         </div>
 
@@ -80,7 +83,7 @@
                                 <li><a href="partnerships.html#becomepartner">Become a partner</a></li>
                             </ul>
                         </li>
-                        <li><a href="http://www.jonar.com/jonarblog/">News</a></li>
+                        <li><a href="news.html">News</a></li>
                         <li class="dropdown">
                             <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown">Contact<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -100,7 +103,7 @@
 		<div class="container">
             <img id="jonarbg" width="100%" src="images/jonarbg.png"/>
             <div id="maintext">
-                <h1 class="featurette-heading">Software that makes <b>your</b> business <b>better</b></h1>
+                <h2 class="featurette-heading">Software that makes <b>your</b> business <b>better</b></h2>
                 <button type="submit" class="btn btn-primary">What is ERP?</button>
             </div>
         </div>
@@ -254,14 +257,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
     <script src="js/index.js"></script>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=280161028800008&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
   </body>
 </html>
 

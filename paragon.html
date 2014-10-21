@@ -9,12 +9,26 @@
     	<link href="css/index.css" rel="stylesheet">
 	</head>
 	<body id="paragon-body">
-	<div id="updown">
-		<span id="uparrow" class="glyphicon glyphicon-upload"></span>
-		<br>
-		<span id="downarrow" style="margin-top:20px" class="glyphicon glyphicon-download"></span>
-	</div>
-	<div class="navbar navbar-blue navbar-fixed-top" role="navigation">
+        
+        <div id="fb-root"></div>
+        <div class="fb-like-box" id="fblikebox" style="display:none" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" data-width="300px" 
+            data-height="400px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+        <a class="twitter-timeline" href="https://twitter.com/JonarSystemsInc" data-widget-id="267999508967866368"></a>
+        
+        <div id="updown">
+		    <span id="uparrow" class="glyphicon glyphicon-upload"></span>
+		    <br>
+		    <span id="downarrow" class="glyphicon glyphicon-download"></span>
+        </div>
+        
+        <div class="social-media">
+            <div id="twitter"><img src="images/twitter.png"/></div>
+            <div id="facebook"><img src="images/facebook.png"></img></div>
+            <div id="blog"><a href="news.html"><img src="images/blog.png"></a></img></div>
+            <div id="email"><img src="images/email.png"></img></div>
+        </div>
+        
+    <div class="navbar navbar-blue navbar-fixed-top" role="navigation">
       <div id="nav-container" class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -54,7 +68,7 @@
                     <li><a href="partnerships.html#becomepartner">Become a partner</a></li>
                 </ul>
             </li>
-            <li><a href="http://www.jonar.com/jonarblog/">News</a></li>
+            <li><a href="news.html">News</a></li>
             <li class="dropdown">
                 <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown">Contact<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -70,10 +84,7 @@
         </div>
       </div>
       </div>
-		<div id="page">
-
-
-			<section class="grey-section clearfix"  style="padding:0" id="featuress">
+			<section class="grey-section clearfix"  style="padding:0" id="features">
                 <div class="paragon-feature" id="paragon-cs">
                     <div class="paragon-inner">
                         <h2 class="text-center">Customer Service</h2>
@@ -81,9 +92,14 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Customer Service</h2>
                         <img class="text-center" src="images/animation/customerservice.png"/>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>Sales orders</li>
+                            <li>RMAs & credits</li>
+                            <li>Customer information (addresses, credit level, history)</li>
+                            <li>Product inventory (inventory, specifications)</li>
+                            <li>CRM (complaints, loyalty points)</li>
+                            <li>Shipment information & tracking info</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-accounting">
@@ -93,9 +109,17 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Accounting</h2>
                         <img class="text-center" src="images/animation/accounting.png"/>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>GL & Journal (bookkeeping)</li>
+                            <li>Tax filing</li>
+                            <li>Audits + financial reporting (income statement, balance sheet, trial balance)</li>
+                            <li>Payroll, AP, AR</li>
+                            <li>Fixed asset management</li>
+                            <li>Royalties & letters of credit</li>
+                            <li>Inventory</li>
+                            <li>Budgeting</li>
+                            <li>Commissions</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-shipping">
@@ -105,9 +129,16 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Shipping and Logistisc</h2>
                         <img class="text-center" src="images/animation/shipping.png"/>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>Pick & Pack</li>
+                            <li>Labelling & documentation
+                            (commercial invoice, carrier documentation, manifests, certificates)</li>
+                            <li>Arrange for shipment</li>
+                            <li>Track shipments – SIT inbound & outbound</li>
+                            <li>Customs</li>
+                            <li>Pallets</li>
+                            <li>Boxing</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-manufacturing">
@@ -117,21 +148,54 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Manufacturing</h2>
                         <img class="text-center" src="images/animation/factory.png"/>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>Work orders</li>
+                            <li>Scheduling</li>
+                            <li>Quality control</li>
+                            <li>Capacity planning</li>
+                            <li>Equipment management</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-warehousing">
                     <div class="paragon-inner">
-                        <h2 class="text-center">Warehousing</h2>
+                        <h2 class="text-center">Warehousing & Inventory</h2>
                     </div>
                     <div class="container paragon-inner-show">
-                        <h2 class="text-center">Product Design & Management</h2>
+                        <h2 class="text-center">Warehousing & Inventory</h2>
+                        <img class="text-center" src="images/animation/warehouse.png"/>
+                        <ul>
+                            <li>Multiple warehouse</li>
+                            <li>Bin locations</li>
+                            <li>Inventory & locations identification through 
+                            barcodes or RFID tags</li>
+                            <li>Inventory counting & 
+                            adjustments</li>
+                            <li>Allocation Reservation</li>
+                            <li>Receiving</li>
+                            <li>Quality inspection</li>
+                            <li>Damages</li>
+                            <li>Shelving</li>
+                            <li>Picking</li>
+                            <li>Min & Max quantities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="paragon-feature" id="paragon-purchasing">
+                    <div class="paragon-inner">
+                        <h2 class="text-center">Purchasing</h2>
+                    </div>
+                    <div class="container paragon-inner-show">
+                        <h2 class="text-center">Purchasing</h2>
                         <img class="text-center" src="images/animation/productdesign.png"/>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>AP</li>
+                            <li>POs</li>
+                            <li>Vendor management & vendor performance</li>
+                            <li>Material requirements</li>
+                            <li>Inventory</li>
+                            <li>Royalties & letters of credit</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-product">
@@ -141,9 +205,22 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Product Design & Management</h2>
                         <img class="text-center" src="images/animation/productdesign.png"/>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>BOM
+                            (specifications, materials, labour, certificates)</li>
+                            <li>Packaging</li>
+                            <li>Tech packs</li>
+                            <li>Costing</li>
+                            <li>Test tracking</li>
+                        </ul>
+                        <ul>
+                            <li>Costing</li>
+                            <li>Catalogues</li>
+                            <li>Margins & markups</li>
+                            <li>Lifecycle</li>
+                            <li>Line management</li>
+                            <li>Forecasting</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-sales">
@@ -153,9 +230,20 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Sales</h2>
                         <img class="text-center" src="images/animation/sales.png"/>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>AR</li>
+                            <li>Sales orders</li>
+                            <li>Product information</li>
+                            <li>Customer information</li>
+                            <li>Shipment information</li>
+                            <li>Bulk orders</li>
+                            <li>Discounts</li>
+                            <li>Catalogs</li>
+                            <li>Commissions/ performance 
+                            management</li>
+                            <li>Line management</li>
+                            <li>Forecasting</li>
+
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-hr">
@@ -165,9 +253,14 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Human Resources</h2>
                         <img class="text-center" src="images/animation/humanresource.png"/>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>Payroll/wages</li>
+                            <li>Employee file</li>
+                            <li>Absences & vacations</li>
+                            <li>Commissions</li>
+                            <li>Certifications</li>
+                            <li>CVs</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-bi">
@@ -177,6 +270,35 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">Business Intelligence</h2>
                         <img class="text-center" src="images/animation/bi.png"/>
+                        B.I. stands for “business
+                        intelligence,” an industry term 
+                        which isn't particularly helpful in 
+                        explaining much about what it 
+                        actually does. B.I. tools allow you 
+                        to manipulate data in order to 
+                        combine and extract the specific 
+                        information that is most relevant 
+                        to answering your burning 
+                        business questions. Basically, B.I. 
+                        should help you make evidence-
+                        based decisions and enable you 
+                        to prepare for world domination.
+                        <br><br>
+                        We actually have a great 
+                        YouTube video on B.I. if you 
+                        want to take a look at it <a href="index.html/#whatisbi">here</a>.
+                        <ul>
+                            <li>Reporting & pretty, pretty
+                            graphs</li>
+                            <li>Data mining</li>
+                            <li>CPM</li>
+                            <li>Geoanalysis (AKA putting 
+                            cool stuff on maps)</li>
+                            <li>What-If Analysis</li>
+                            <li>Forecasting</li>
+                            <li>Cash & material 
+                            requirements</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-edi">
@@ -186,64 +308,396 @@
                     <div class="container paragon-inner-show">
                         <h2 class="text-center">EDI</h2>
                         <img class="text-center" src="images/animation/productdesign.png"/>
+                        <ul>
+                            <li>ASNs & different
+                            transactions</li>
+                            <li>Hundred of trading partners</li>
+                            <li>Catalogs</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="paragon-feature" id="paragon-management">
                     <div class="paragon-inner">
-                        <h2 class="text-center">Management</h2>
+                        <h2 class="text-center">Management & Other</h2>
                     </div>
                     <div class="container paragon-inner-show">
-                        <h2 class="text-center">Management</h2>
+                        <h2 class="text-center">Management & Other</h2>
                         <img class="text-center" src="images/animation/management.png"/>
-                    </div>
-                </div>
-                <div class="paragon-feature" id="paragon-other">
-                    <div class="paragon-inner">
-                        <h2 class="text-center">Other</h2>
-                    </div>
-                    <div class="container paragon-inner-show">
-                        <h2 class="text-center">Other</h2>
-                        <img class="text-center" src="images/animation/productdesign.png"/>
+                        <ul>
+                            <li>System administration (user
+                            set up, backups, security, 
+                            configuration, code set up)</li>
+                            <li>e-Commerce</li>
+                            <li>Marketing</li>
+                            <li>Point of Sales</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 			<section class="grey-section" id="whatisparagon">
                 <div class="container">
-					<h2>What Is Paragon</h2>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<h2>Video</h2>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<iframe width="100%" height="480" src="http://www.youtube.com/embed/PVRgIXLWDHs" frameborder="0" allowfullscreen></iframe>
-					<h2>Description</h2>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<h2>Trial and Buy</h2>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<h1 class="more"><small>read more</small></h1>
-					<div class="showmore">
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</div>
+                    <h2>What Is Paragon</h2>
+                    <p>
+                    After more than 25 years in the ERP business, we decided it was time for change. So, we went
+                    back to the drawing board to create an ERP system from scratch. Our goal: to create an ERP system 
+                    that's better in every respect - from its look and feel, to its usability and functionality. From there, 
+                    Paragon was born. Don't be fooled by its pretty looks, Paragon is an incredibly powerful and user-
+                    friendly system that does everything you need it to do.
+                    Find more about <a href="#features">Paragon's features</a>.
+                    </p>
+                    <hr class="featurette-divider">
+                    <h2>What makes Paragon different from the other guys?</h2>
+                    <p>
+                    For some reason, ERP software hasn't evolved at the same speed as most modern consumer
+                    software. Modern consumer software is cool, intuitive and user-friendly, while traditional ERP software 
+                    is cluttered, complicated and confusing. And there are millions of people who use this outdated, 
+                    irritating and infuriating software every single day. But just because something is powerful, doesn't 
+                    mean it has to be complicated. 
+                    <br><br>
+                    In general, people <u>hate</u> ERP systems. We decided to figure out why. From there, we designed something 
+                    that would address those reasons. 
+                    Here are our <u><b>Top 6 Reasons ERP Systems Have Sucked</b></u> (Historically Speaking):
+                    </p>
+                    <h3>Reason #1 - ERP systems aren't easy to use and need lots of training to master.</h3>
+                    <p><u>Paragon is easy to use.</u></p>
+                    <p><i>Paragon is designed to look like what it does.</i></p>
+                    <p>
+                    For example, the purchase order looks like an actual purchase order, notes are taken on a notepad, and 
+                    the digital accounting journal looks like its real life counterpart. With digital elements that resemble real 
+                    world objects, Paragon appeals to the user's intuition making it easier to use without much training.
+                    </p>
+                    <p><i>Paragon looks like modern consumer software user interfaces.</i></p>
+                    <p>Although the enterprise application market is larger than most other software markets, enterprise
+                    applications lag when it comes to user interface. iPhone applications are modernized and updated 
+                    constantly. Web applications, too. But for some reason, ERP systems haven't evolved the way other 
+                    consumer software has. And we don't understand why. When we think about it... people are using an 
+                    ERP solution for the majority of their day, and we felt that they shouldn't have to work with software 
+                    that looks like it still lives in the 1990s.
+                    </p>
+
+                    <h3>Reason #2 - ERP systems don't do what you want them to do.</h3>
+                    <p><u>Paragon actually does what you want it to.</u></p>
+                    <p>You know how, when dealing with your customers or vendors, each one of them has to be a special
+                    snowflake... as in, no two are the same? Well, we developed this thing we call the “rules engine.” It 
+                    allows us to set conditions for your system, or even to customize the code to suit processes that relate 
+                    uniquely to your business. Want to ship additional goods only when the moon is full and the shipper is 
+                    wearing a blue sweater and doing the Macarena? Done. The rules engine would allow for these changes 
+                    to be created quickly and efficiently.
+                    </p>
+
+                    <h3>Reason #3 - ERP systems don't always run smoothly.</h3>
+                    <p><u>Paragon does. It's just that simple.</u></p>
+                    <p><i>Design Process</i></p>
+                    <p>
+                    To ensure quality and reliability, Paragon was designed using the agile method of software 
+                    development, which is an iterative and incremental development process. This process is divided 
+                    into short and regular “sprints” of work, with the goal of producing a completely functional product 
+                    increment by the end of each sprint. This allows for every aspect of the design process to be reviewed 
+                    and revised at short intervals. Thus, the direction of the project can continually be adjusted and 
+                    evaluated.
+                    </p>
+                    <p><u>Cloud</u></p>
+                    <p>
+                    Paragon sits on the Microsoft Azure cloud platform, which offers a number of advantages for its
+                    functionality. Cloud applications can perform at any required speed, on-demand. Data is encrypted and 
+                    secured from viruses. And finally, data can also be accessed from anywhere with an internet connection, 
+                    at any time. For more information on the cloud, click here.
+                    </p>
+                    <p><u>Scalability</u></p>
+                    <p>
+                    Paragon is completely scalable and can grow to accommodate all database and user needs. Paragon's
+                    concurrent licensing model allows an unlimited number of users, and user licences can be purchased 
+                    quickly and easily online. Furthermore, since Paragon sits on the Microsoft Azure cloud platform, it has 
+                    unlimited storage, so it can scale up (or down) on demand, automatically, to meet the needs of our 
+                    customers.
+                    </p>
+
+                    <h3>Reason #4 - ERP systems have limited feature sets.</h3>
+                    <p><u>Paragon has a HUGE feature set.</u></p>
+                    <p>
+                    Most ERP systems claim they come with all the modules you'll possibly need. They lie. And most of the
+                    time, the company either doesn't even have specific modules, or does, but did not include it in your 
+                    contract, meaning you'll have to pay more. Our customer service representatives were drowning in calls 
+                    requesting additional modules. We saw the problem so we addressed it. Paragon is a comprehensive 
+                    and all-inclusive software that really truly has all the features you need. <i>Honestly</i>
+                    </p>
+
+                    <h3>Reason #5 - ERP systems always cost more than expected.</h3>
+                    <p><u>Paragon does not defy cost expectations. Our pricing model is simple.</u></p>
+                    <p>
+                    You have two choices. That's it, that’s all. Check out our pricing page for more info.
+                    <ul>
+                        <li>$150/user/month for our basic package</li>
+                        <li>$300/user/month for our complete package</li>
+                    </ul>
+                    <p><i>Don't look for the fine print. There are no hidden costs here.</i></p>
+                    <p>
+                    Typically, what you think you'll be paying for an ERP system is not what you actually pay. There are
+                    a number of hidden costs. Aside from purchasing the software licenses, you may also pay for new 
+                    hardware (such as server and computers), maintenance fees associated with the upkeep of the 
+                    hardware, service charges, and customization fees. Paragon operates on the cloud, so there is no need 
+                    to purchase hardware. That means you can use the computer you already have and you don't need a 
+                    new server either. Plus, we're responsible for IT so that’s another thing you’re not worrying about.
+                    </p>
+                    <p><i>Paragon doesn't lock you into a long contract.</i></p>
+                    <p>Our pricing model means that you pay either $150 or $300 per user per month, so you can terminate
+                    your contract whenever you like.
+                    </p>
+
+                    <h3>Reason #6 - ERP systems require you to pay for demos and trials.</h3>
+                    <p><u>Paragon offers prospective customers a free 30-day trial period.</u></p>
+                    <p>What are you waiting for? <u>Get started now.</u></p>
+                </div>
 			</section>
 
 			<section class="white-section"  id="pricing">
 				<div class="container">
 					<h1>Pricing</h1>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
+                    <p>Paragon is offered under two different package types: Basic and Complete. That way, you get to
+                    choose the usage you think is best suited for you and your business.</p>
+                </div>
 			</section>
 
 			<section id="faq" class="grey-section">
 				<div class="container">
-					<h2>Login</h2>
-					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</section>
+					<h2>FAQ</h2>
+                    <h4>What happens if the server goes down?</h4>
+                    <p><b>Outlook good.</b>Paragon sits on the Microsoft Azure platform. Paragon uses a Level 1 server which is
+                    underground and secure. In the highly unlikely event that Microsoft's server goes down, your server 
+                    problems won't be your primary concern. In any case, if the server were to go down in the absence of 
+                    natural disasters and life threatening events, we will get you back up and running within the day.
+                    </p>
+                    <p>
+                    On the bright side, if the Microsoft servers do go down, everyone goes down. At least we have that
+                    going for us, right?
+                    </p>
+                    </br>
+                    <p>...Right?</p>
+                    <h4>Won't paying per user per month end up being more expensive than a normal application?</h4>
+                    <p><b>Very doubtful.</b> 
+                    It depends on the pricing model, but Paragon is intended to be more cost effective
+                    than traditional ERP applications. By traditional ERP applications, we're talking about the whole kit and 
+                    caboodle: new software, new hardware, licenses, maintenance, training, customizations, and so on. 
+                    Software as a service (SaaS) on the other hand, is designed to be cheaper over time because it reduces 
+                    the cost associated with hardware, downtimes, and updates over the long term.
+                    </p>
 
-		</div>
+                    <h4>Does Paragon work faster in different browsers?</h4>
+                    <p><b>My reply is no.</b> 
+                    The browser you use has no effect on Paragon's performance. Paragon's platform 
+                    independence allows for it to operate just as fast in any browser.
+                    </p>
+
+                    <h4>Does Paragon slow down significantly when dealing with bulk operations (e.g. processing
+                    orders with many line items)?</h4>
+                    <p><b>My sources say no.</b> 
+                    (Don't count on it.) We've noticed that many cloud applications slow down
+                    dramatically while processing bulk operations. Paragon is different. Paragon takes an approach that 
+                    allows mass operations to be carried out comparatively quickly. We even tested it. We loaded over 
+                    6,000 order lines into a new order in under 3 seconds. Click here for the test results.
+                    </p>
+
+                    <h4>Is Paragon updated periodically?</h4>
+                    <p><b>As I see it, yes</b>
+                    We understand that users don't like change once they're familiar with an application.
+                    All of our updates are specifically designed to enhance Paragon without changing it. We don't make 
+                    changes for the sake of making changes. We do it for a purpose.
+                    </p>
+                    <p>
+                    Once an update has been decided upon, we go through an internal process to test its functionality.
+                    A test group of users then tests the update again before we push the update out across the whole 
+                    infrastructure. Users will be notified when updates are made. And for added security, we maintain a 
+                    rollback functionality which means that we can undo the update if anything goes wrong.
+                    </p>
+
+                    <h4>Can two people edit the same data at the same time?</h4>
+                    <p><b>Yes.</b>
+                    And it won't cause mass destruction of your data. The second user will be notified that changes
+                    were made while they were editing and will be asked if they would like to proceed. Paragon will issue a 
+                    warning before they proceed to edit the data.
+                    </p>
+
+                    <h4>Does Paragon use partners/third parties for implementation?</h4>
+                    <p><b>You may rely on it.</b>
+                    Jonar only agrees to partner with awesome third-party channel partners. They have
+                    to be certified and authorized to sell our services, implement systems, and train you guys without any 
+                    problems. Our partners have the team and services available to ensure a smooth transition. We are 
+                    always looking to increase our network of implementation agents, whose role will be to guide and assist 
+                    with this.
+                    </p>
+
+                    <h4>We have limited IT resources. Will we need to hire a full time IT person?</h4>
+                    <p><b>All signs point to no.</b>
+                    Paragon is platform and database independent, and does not require a server.
+                    As long as you have a stable internet connection, you will not have any problems. The administration 
+                    interface is easy enough for anyone to use. Backups, performance, and redundancy are all managed by 
+                    us. So, no worries, we got you.
+                    </p>
+
+                    <h4>Is Paragon scalable? Can we add new users at a later date?</h4>
+                    <p><b> Yes, definitely</b>
+                    Paragon has a concurrent licensing model which means you can have as many users as
+                    you would like. Your Paragon Administrator can create new users. The number of users who can access 
+                    the system at any one time however will depend on the number of licenses you have purchased. You 
+                    can purchase additional user licenses HERE.
+                    </p>
+
+                    <h4>Can Paragon handle lots of data?</h4>
+                    <p><b>Without a doubt</b>
+                    The Paragon cloud sits on the Microsoft Azure platform, a cloud platform that ensures
+                    unlimited storage. This means it scales up (or down) on demand, automatically, to meet your needs. 
+                    Click here for more information on Microsoft Azure.
+                    </p>
+
+                    <h4>Is web-based ERP more ideal than server-based solution?</h4>
+                    <p><b>All signs point to yes</b>
+                    There are a number of reasons web-based ERP is favourable: for one, the cost.
+                    Traditionally, in addition to purchasing the software licence, companies pay for the hardware (servers, 
+                    etc.), implementation, and the ongoing IT costs associated with maintenance. Implementation of web-
+                    based ERP is faster and cheaper than traditional ERP, and since we house the hardware, web based ERP 
+                    eliminates the costs associated with hardware and maintenance. Over the long term, web-based ERP is 
+                    more cost effective.
+                    </p>
+                    <p>
+                    Additionally, web-based ERP can perform at speeds as fast as you may need it, and it does so on-
+                    demand. Data managed through web-based ERP is secure. Your data is encrypted and isolated from the 
+                    network, so no viruses can corrupt your data.
+                    </p>
+                    <p>
+                    Finally, web-based ERP is scalable. The system can grow infinitely to accommodate any of your database
+                    and user's needs. Web-based ERP is also flexible, allowing users to access data anywhere, and at any 
+                    time. With a web-based ERP system, there is little risk and commitment involved. You can change your 
+                    mind at any moment and opt out of the ERP services easily.
+                    </p>
+
+                    <h4>Can I purchase individual modules?</h4>
+                    <p><b>Absolutely,</b>
+                    go for it! And when you purchase one, we'll throw in all the rest of them for free!
+                    </p>
+
+                    <h4>Can I try Paragon for free, without any risk of being charged?</h4>
+                    <p><b>Yes.</b>In fact, we offer a 30-day trial which you can sign up for here.</p>
+
+                    <h4>Can I control what data each of my users have access to?</h4>
+                    <p><b>As I see it, yes.</b> 
+                    We have very granular user group and division access controls. User profiles are also
+                    role-based, allowing you to further control which data is accessible by certain users.
+                    </p>
+
+                    <h4>Will the application be slow if many people are accessing the system at the same time?</h4>
+                    <p><b>My reply is no.</b>
+                    Well, theoretically it will slow down, but Microsoft Azure allows Paragon to use
+
+                    scalable architecture that can expand by a factor of 32 times in the span of 90 seconds, automatically. 
+
+                    Essentially, the expansion is fast enough you won't even notice the difference.
+                    </p>
+
+                    <h4>Do I need permanent internet connection to work with Paragon?</h4>
+                    <p><b>It is decidedly no.</b>
+                    Paragon requires an internet connection. If you can't access the cloud then you
+
+                    can't access the software. There are a number of ways to ensure permanent connectivity, including 
+
+                    redundant networks and cellular connection.
+                    </p>
+
+                    <h4>Am I in charge of backing up my own data?</h4>
+                    <p><b>Very doubtful.</b>
+                    If your data is hosted on the cloud, we are responsible.
+                    </p>
+
+                    <h4>Can I get copies of my data once it has been backed up?</h4>
+                    <b>Without a doubt</b>
+
+                    <h4>Will Paragon work on devices other than my desktop computer?</h4>
+                    <p><b>Signs point to yes.</b>
+                    Paragon works on any device that runs Java, including all devices that have a Mac
+
+                    OS, Windows OS, or Linux OS. Paragon also works on all browsers that can run Java, including mobile 
+
+                    devices. For a more comprehensive list of devices that run Java, click here.
+                    </p>
+                    <p>Unfortunately, at this moment, we can't guarantee it'll work on your toaster oven or other kitchen
+
+                    devices. Perhaps in due time...
+                    </p>
+
+                    <h4>If my competitors use the same system, will they be able to see or hack into my company's
+                        data?</h4>
+                    <p><b>My reply is no</b>
+                    Paragon uses an isolated tenant model, which means that there is root level segregation
+
+                    of the data by tenant. Not even Jonar can go from one tenant's data to another. There is no cross tenant 
+                    data sharing. The tenant is hard coded to make the system fetch the information only related to it.
+                    </p>
+
+                    <h4>Can Paragon be accessed from anywhere in the world?</h4>
+                    <p><b>As I see it, yes.</b>
+                    Paragon is accessible anywhere with an active internet connection. So, if there's a way to
+                    access the web, you could even log in from the bottom of a mineshaft or at the top of Mount Everest.
+                    </p>
+
+                    <h4>Does Paragon work on the major databases?</h4>
+                    <p><b>It is decidedly so.</b>
+                    Paragon is database-independent, so it works on databases such as but not limited to
+                    MySQL, Oracle, PostgreSQL.
+                    </p>
+                
+                    <h4>What is platform-independence?</h4>
+                    <p>
+                    Platform-independence don't need no man. 
+                    </p>
+                    <p>
+                    It's basically when you create an application that can be run on most types on software platforms (like 
+
+                    MacOS, Linux, Unix, Windows), or on any hardware platform (PC, Mac, SunSparc, etc.). Most programs 
+
+                    written in Java love this stuff.
+                    </p>
+
+                    <h4>What is database-independence?</h4>
+                    <p>Database-independence involves storing generated data in a location separate from the application that 
+                    uses it. The data is then kept safely away from the application and is archived accordingly.
+                    </p>
+
+                    <h4>What is the Cloud?</h4>
+                    <p>When referring to "The Cloud" in the technology industry, we are transcending its traditional meaning
+                    of being a floating mass of condensed water vapour which hangs out in the atmosphere. The cloud in 
+                    tech speak refers to storing and accessing your applications on the Internet instead of your computer's 
+                    network.
+                    </p>
+
+                    <h4>What is SaaS (Software as a Service)?</h4>
+                    <p>
+                    SaaS is the prefix of the exaggerated pronunciation of "Saassssy". 
+                    </p>
+                    <p>
+                    No. In all seriousness, Software as a Service involves selling a software with a services model, which is to 
+
+                    say that there is no need for installing software on your local computer. You are paying for the service of 
+
+                    using the software instead of owning a part of it.
+                    </p>
+
+                    <h4>Who owns my data?</h4>
+
+                    <h4>Isn't operating within the cloud risky?</h4>
+                    <p><b>My sources say no.</b>
+                   Accessing Paragon through the web actually offers protection against viruses as well 
+                    as reduces your exposure to data breaches. 
+                    Click here for more detail:</p>
+
+                </div>
+			</section>
+    <div class="container">
+        <footer>
+            <span class="glyphicon glyphicon-globe"></span>
+            <a href="#">Canada - English</a>&nbsp|&nbsp<a style="color:grey">Canada - French</a>
+            <p class="pull-right"><a href="#main">Back to top</a></p>
+            <p>© 2014 Jonar Systems. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script><style type="text/css"></style>
 	    <script src="js/bootstrap.js"></script>
 	    <script src="js/index.js"></script>
@@ -266,7 +720,7 @@
                 $(inner).show(0);
                 var blah = $(temp).offset().top;
                 var bg = $(this).css("background-color");
-                $("#paragon-section2").css("background-color",bg);
+                $("#features").css("background-color",bg);
                 curOpen = $(this);
                 setTimeout( function() {
                     $('html,body').animate({
